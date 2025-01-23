@@ -6,7 +6,9 @@ import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 
 import { Users } from './collections/Users'
-import { Media } from './collections/Media'
+import DeliveryJobs from '@/collections/DeliveryJobs'
+import Addresses from '@/collections/Addresses'
+import Numbers from '@/collections/Numbers'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -18,7 +20,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
+  collections: [Users, DeliveryJobs, Addresses, Numbers],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
