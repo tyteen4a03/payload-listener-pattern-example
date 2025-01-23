@@ -1,8 +1,3 @@
-# blank
+# PayloadCMS Listener Pattern Example
 
-blank
-
-## Attributes
-
-- **Database**: mongodb
-- **Storage Adapter**: localDisk
+This is the accompanying repository for my blogpost, [The Listener Pattern in PayloadCMS](https://thelastcode.substack.com/p/the-listener-pattern-in-payloadcms).
